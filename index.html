@@ -6,11 +6,42 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- подключение стилей слайдера -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Kodchasan:wght@700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-
+    <!-- стили для картинок слайдера -->
+    <style>
+     
+      .fade img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        
+      }
+      .slick-prev:before{
+        color: blue;
+      }
+      .slick-next:before{
+        color: blue;
+      }
+    </style>
     <title>WebStudio</title>
   </head>
   <body>
@@ -42,7 +73,6 @@
           </nav>
           <address class="address-wraper">
             <a class="header-link email" href="mailto:info@devstudio.com"
-
               >info@devstudio.com</a
             >
             <a class="header-link phone" href="tel:+380961111111"
@@ -58,7 +88,45 @@
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="hero-btn" type="button">Замовити послугу</button>
       </section>
+      <section>
+        
+      <div class="container">
+        <h2>Слайдер</h2>
+        <div class="fade">
+          <div><img src="https://bipbap.ru/wp-content/uploads/2017/04/priroda_kartinki_foto_03.jpg" /></div>
+          <div><img src="https://s0.rbk.ru/v6_top_pics/media/img/4/04/346843326750044.jpg" /></div>
+          <div><img src="https://img.freepik.com/free-photo/forest-landscape_71767-127.jpg" /></div>
+          <div><img src="https://art-apple.ru/albums/userpics/13921/1_%2812%29.jpg" /></div>
+          <div><img src="https://basik.ru/images/beauty_nature_1/38_beauty_nature.jpg" /></div>
+        </div>
+      </div>
+    </section>
     </main>
     <footer></footer>
+    <!-- подключение скриптов и библиотеки -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".fade").slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: "linear",
+        });
+      });
+    </script>
   </body>
 </html>
