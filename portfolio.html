@@ -36,7 +36,7 @@
                   <a href="./">Студія</a>
                 </li>
                 <li class="header-item active">
-                  <a href="./portfolio">Портфоліо</a>
+                  <a href="./portfolio.html">Портфоліо</a>
                 </li>
                 <li class="header-item">
                   <a href="#footer">Контакти</a>
@@ -59,14 +59,14 @@
             <h1 class="portfolio-title">Наше портфолио</h1>
             <div class="container">
             <ul class="filter-list">
-                <li class="filter-item">Усі</li>
-                <li class="filter-item">Веб-сайти</li>
-                <li class="filter-item">Додатки</li>
-                <li class="filter-item">Дизайн</li>
-                <li class="filter-item">Маркетинг</li>
+                <li class="filter-item" data-filter="all">Усі</li>
+                <li class="filter-item" data-filter="Веб-сайти">Веб-сайти</li>
+                <li class="filter-item" data-filter="Додатки">Додатки</li>
+                <li class="filter-item" data-filter="Дизайн">Дизайн</li>
+                <li class="filter-item" data-filter="Маркетинг">Маркетинг</li>
             </ul>
             <ul class="portfolio-list">
-                <li class="portfolio-item">
+                <li class="portfolio-item" data-item="Веб-сайти">
                     <a href="#">
                         <div class="thumb">
                             <img src="./images/laptop.png" alt="картинка"/>
@@ -78,7 +78,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="portfolio-item">
+                <li class="portfolio-item" data-item="Дизайн">
                     <a href="#">
                         <div class="thumb">
                             <img src="./images/poster.png" alt="картинка"/>
@@ -90,7 +90,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="portfolio-item">
+                <li class="portfolio-item" data-item="Додатки">
                     <a href="#">
                         <div class="thumb">
                             <img src="./images/poster2.png" alt="картинка"/>
@@ -102,7 +102,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="portfolio-item">
+                <li class="portfolio-item" data-item="Маркетинг">
                     <a href="#">
                         <div class="thumb">
                             <img src="./images/poster3.png" alt="картинка"/>
@@ -114,7 +114,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="portfolio-item">
+                <li class="portfolio-item" data-item="Додатки">
                     <a href="#">
                         <div class="thumb">
                             <img src="./images/poster4.png" alt="картинка"/>
@@ -126,7 +126,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="portfolio-item">
+                <li class="portfolio-item" data-item="Веб-сайти">
                     <a href="#">
                         <div class="thumb">
                             <img src="./images/poster5.png" alt="картинка"/>
@@ -223,5 +223,6 @@
           </div>
         </div>
       </footer>
+      <script src="./js/filter.js"></script>
 </body>
 </html>

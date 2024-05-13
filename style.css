@@ -574,7 +574,7 @@ footer {
 
 .portfolio-list{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
     gap: 32px 30px;
     margin-top: 50px;
@@ -582,7 +582,11 @@ footer {
 .portfolio-item{
     width: 370px;
     border: 1px solid #EEE;
+   display: none;
 
+}
+.portfolio-item.filtred{
+  display: block;
 }
 .portfolio-item:hover .thumb-overlay{
     transform: translateY(0);
