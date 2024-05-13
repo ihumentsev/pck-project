@@ -16,9 +16,10 @@
             console.log("указаное фильтр-слово в дата-атрибуте",contentValue);
             if (contentValue === filterValue) {
               item.classList.add("filtred"); // Добавляем класс "filtred" элементу, если значение контента соответствует значению фильтра
-            } else if (filterValue === "all"){
+            }  else if(filterValue === "all"){
                 item.classList.add("filtred");
             } else {
+               
               item.classList.remove("filtred"); // Удаляем класс "filtred" у элемента, если значение контента не соответствует значению фильтра
             }
           });

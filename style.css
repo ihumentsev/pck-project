@@ -582,12 +582,13 @@ footer {
 .portfolio-item{
     width: 370px;
     border: 1px solid #EEE;
-   display: none;
+    display: none;
 
 }
 .portfolio-item.filtred{
   display: block;
 }
+
 .portfolio-item:hover .thumb-overlay{
     transform: translateY(0);
 }
