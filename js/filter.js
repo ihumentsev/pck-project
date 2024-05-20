@@ -1,7 +1,6 @@
 (() => {
   const refs = {
     filterBtns: document.querySelectorAll("[data-filter]"),
-    contentTitle: document.querySelectorAll("[data-content]"),
     filteringItems: document.querySelectorAll("[data-item]"),
   };
 
