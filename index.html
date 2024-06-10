@@ -40,8 +40,8 @@
               <li class="header-item">
                 <a href="./portfolio.html">Портфоліо</a>
               </li>
-              <li class="header-item" >
-                <a href="#footer" >Контакти</a>
+              <li class="header-item">
+                <a href="#footer">Контакти</a>
               </li>
             </ul>
           </nav>
@@ -57,6 +57,42 @@
             <svg width="20" height="20">
               <use href="./images/icons/sprite.svg#icon-mobile-btn"></use>
             </svg>
+          </div>
+          <div class="mobile-menu ">
+            <svg width="20" height="20" class="close-menu_btn">
+              <use href="./images/icons/sprite.svg#close-mobile-btn"></use>
+            </svg>
+            <nav class="mobile-nav_wraper">
+              <ul class="mobile-menu_list">
+                <li class="mobile-item active">
+                  <a href="./">Студія</a>
+                </li>
+                <li class="mobile-item">
+                  <a href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="mobile-item">
+                  <a href="#footer">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <address class="mobile-address_wraper">
+              <a class="mobile-link_phone" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+              <a class="mobile-link_email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </address>
+            <ul class="mobile-social_list">
+              <li class="mobile-social_item">
+                <a href="#">Instagram</a>
+              </li>
+              <li class="mobile-social_item">
+                <a href="#">Twitter</a>
+              </li>
+              <li class="mobile-social_item"><a href="#">Facebook</a></li>
+              <li class="mobile-social_item"><a href="#">LinkedIn</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -147,15 +183,27 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
-            
               <picture>
-                <source srcset="./images/team.png" media="(min-width: 1200px)" />
-                <source srcset="./images/img_lap.png" media="(min-width: 768px)" />
-                <source srcset="images/img_mob.png, images/imgX2.png 2x, images/imgX3.png 3x" media="(min-width: 480px)" />
-                
+                <source
+                  srcset="./images/team.png"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/img_lap.png"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    images/img_mob.png,
+                    images/imgX2.png   2x,
+                    images/imgX3.png   3x
+                  "
+                  media="(min-width: 480px)"
+                />
+
                 <img src="./images/img_mob.png" alt="Фотография" />
               </picture>
-              
+
               <h3 class="team-item_title">Ігор Дем'яненко</h3>
               <p class="team-item_text">Product Designer</p>
               <ul class="team-item_list">
@@ -271,10 +319,19 @@
             </li>
             <li class="team-item">
               <picture>
-                <source srcset="./images/team2.png" media="(min-width: 1200px)" />
-                <source srcset="./images/img-1_lap.png" media="(min-width: 768px)" />
-                <source srcset="./images/img-1_mob.png" media="(min-width: 480px)" />
-                
+                <source
+                  srcset="./images/team2.png"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/img-1_lap.png"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/img-1_mob.png"
+                  media="(min-width: 480px)"
+                />
+
                 <img src="./images/img-1_mob.png" alt="Фотография" />
               </picture>
               <h3 class="team-item_title">Ольга Рєпіна</h3>
@@ -392,10 +449,19 @@
             </li>
             <li class="team-item">
               <picture>
-                <source srcset="./images/team3.png" media="(min-width: 1200px)" />
-                <source srcset="./images/img-2_lap.png" media="(min-width: 768px)" />
-                <source srcset="./images/img-2_mob.png" media="(min-width: 480px)" />
-                
+                <source
+                  srcset="./images/team3.png"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/img-2_lap.png"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/img-2_mob.png"
+                  media="(min-width: 480px)"
+                />
+
                 <img src="./images/img-2_mob.png" alt="Фотография" />
               </picture>
               <h3 class="team-item_title">Микола Тарасов</h3>
@@ -512,12 +578,20 @@
               </ul>
             </li>
             <li class="team-item">
-             
               <picture>
-                <source srcset="./images/team4.png" media="(min-width: 1200px)" />
-                <source srcset="./images/img-3_lap.png" media="(min-width: 768px)" />
-                <source srcset="./images/img-3_mob.png" media="(min-width: 480px)" />
-                
+                <source
+                  srcset="./images/team4.png"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/img-3_lap.png"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/img-3_mob.png"
+                  media="(min-width: 480px)"
+                />
+
                 <img src="./images/img-3_mob.png" alt="Фотография" />
               </picture>
               <h3 class="team-item_title">Михайло Єрмаков</h3>
@@ -755,12 +829,11 @@
           <div class="form-wraper">
             <h2>Підпишіться на розсилку</h2>
             <form class="footer-form">
-              <input class="form-input" type="email" placeholder="E-mail"/>
-              <button type="button" class="form-btn">Підписатися
+              <input class="form-input" type="email" placeholder="E-mail" />
+              <button type="button" class="form-btn">
+                Підписатися
                 <svg width="24" height="24" fill="#fff">
-                  <use
-                    href="./images/icons/sprite.svg#icon-send"
-                  ></use>
+                  <use href="./images/icons/sprite.svg#icon-send"></use>
                 </svg>
               </button>
             </form>
@@ -768,7 +841,7 @@
         </div>
       </div>
     </footer>
-    <script src="./js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/mobile-menu.js"></script> -->
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
