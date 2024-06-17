@@ -9,7 +9,7 @@
     refs.closeModalBtn.addEventListener("click", toggleModal);
   
     function toggleModal() {
-        console.log("nfjfj");
+        console.log("Функция работает!!!!!");
       refs.modal.classList.toggle("is-hidden");
     }
   })();

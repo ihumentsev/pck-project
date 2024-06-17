@@ -51,24 +51,24 @@
                 >+38 096 111 11 11</a
               >
             </address>
-            <div class="mobile-menu_btn">
+            <div class="mobile-menu_btn" data-open-modal>
               <svg width="20" height="20">
                 <use href="./images/icons/sprite.svg#icon-mobile-btn"></use>
               </svg>
             </div>
-            <div class="mobile-menu ">
-              <svg width="20" height="20" class="close-menu_btn">
+            <div class="mobile-menu" data-menu>
+              <svg width="20" height="20" class="close-menu_btn" data-modal-close>
                 <use href="./images/icons/sprite.svg#close-mobile-btn"></use>
               </svg>
               <nav class="mobile-nav_wraper">
                 <ul class="mobile-menu_list">
-                  <li class="mobile-item active">
+                  <li class="mobile-item " data-link>
                     <a href="./">Студія</a>
                   </li>
-                  <li class="mobile-item">
+                  <li class="mobile-item active" data-link>
                     <a href="./portfolio.html">Портфоліо</a>
                   </li>
-                  <li class="mobile-item">
+                  <li class="mobile-item" data-link>
                     <a href="#footer">Контакти</a>
                   </li>
                 </ul>
@@ -265,5 +265,6 @@
         </div>
       </footer>
       <script src="./js/filter.js"></script>
+      <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

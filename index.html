@@ -53,24 +53,24 @@
               >+38 096 111 11 11</a
             >
           </address>
-          <div class="mobile-menu_btn">
+          <div class="mobile-menu_btn" data-open-modal>
             <svg width="20" height="20">
               <use href="./images/icons/sprite.svg#icon-mobile-btn"></use>
             </svg>
           </div>
-          <div class="mobile-menu ">
-            <svg width="20" height="20" class="close-menu_btn">
+          <div class="mobile-menu" data-menu>
+            <svg width="20" height="20" class="close-menu_btn" data-modal-close>
               <use href="./images/icons/sprite.svg#close-mobile-btn"></use>
             </svg>
             <nav class="mobile-nav_wraper">
               <ul class="mobile-menu_list">
-                <li class="mobile-item active">
+                <li class="mobile-item active" data-link>
                   <a href="./">Студія</a>
                 </li>
-                <li class="mobile-item">
+                <li class="mobile-item" data-link>
                   <a href="./portfolio.html">Портфоліо</a>
                 </li>
-                <li class="mobile-item">
+                <li class="mobile-item" data-link>
                   <a href="#footer">Контакти</a>
                 </li>
               </ul>
@@ -97,6 +97,60 @@
         </div>
       </div>
     </header>
+    <div class="backdrop">
+      <div class="modal">
+        <svg width="20" height="20" class="close-menu_btn">
+          <use href="./images/icons/sprite.svg#close-mobile-btn"></use>
+        </svg>
+        <h2 class="modal-form_title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="modal-form">
+          <label for="name">Ім'я</label >
+            <div class="modal-input_wraper">
+              <input type="text" name="name" id="name" placeholder="Татьяна" />
+          <svg width="20" height="20" class="input-icon">
+            <use href="./images/icons/sprite.svg#icon-person-black"></use>
+          </svg>
+            </div>
+          
+          <label for="phone">Телефон</label>
+          <div class="modal-input_wraper">
+            <input
+            type="number"
+            name="phone"
+            id="phone"
+            placeholder="+3807568954"
+           
+          />
+          <svg width="20" height="20" class="input-icon">
+            <use href="./images/icons/sprite.svg#icon-phone-black"></use>
+          </svg>
+          </div>
+          
+          <label for="email">Пошта</label>
+          <div class="modal-input_wraper">
+            <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@gmail.com"
+           
+          />
+          <svg width="20" height="20" class="input-icon">
+            <use href="./images/icons/sprite.svg#icon-email-black"></use>
+          </svg>
+          </div>
+          
+          <label for="coment">Коментар</label>
+          <textarea name="coment" id="coment"></textarea>
+          <div>
+            <input type="checkbox" name="agree" />
+            <p>Погоджуюся з розсилкою та приймаю</p>
+            <a>Умови договору </a>
+          </div>
+          <button>Відправити</button>
+        </form>
+      </div>
+    </div>
     <main>
       <!-- section hero -->
       <section class="hero-section">
@@ -841,7 +895,7 @@
         </div>
       </div>
     </footer>
-    <!-- <script src="./js/mobile-menu.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
     <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
