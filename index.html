@@ -97,16 +97,18 @@
         </div>
       </div>
     </header>
-    <div class="backdrop">
-      <div class="modal">
-        <svg width="20" height="20" class="close-menu_btn">
+
+    <!-- backdrop -->
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal" data-modal>
+        <svg width="20" height="20" class="close-menu_btn" data-close>
           <use href="./images/icons/sprite.svg#close-mobile-btn"></use>
         </svg>
         <h2 class="modal-form_title">Залиште свої дані, ми вам передзвонимо</h2>
-        <form class="modal-form">
+        <form class="modal-form" data-form>
           <label for="name">Ім'я</label >
             <div class="modal-input_wraper">
-              <input type="text" name="name" id="name" placeholder="Татьяна" />
+              <input type="text" name="name" id="name" placeholder="Татьяна" class="backdrop-input"/>
           <svg width="20" height="20" class="input-icon">
             <use href="./images/icons/sprite.svg#icon-person-black"></use>
           </svg>
@@ -115,7 +117,8 @@
           <label for="phone">Телефон</label>
           <div class="modal-input_wraper">
             <input
-            type="number"
+            class="backdrop-input"
+            type="tel"
             name="phone"
             id="phone"
             placeholder="+3807568954"
@@ -133,6 +136,7 @@
             name="email"
             id="email"
             placeholder="email@gmail.com"
+            class="backdrop-input"
            
           />
           <svg width="20" height="20" class="input-icon">
@@ -141,13 +145,17 @@
           </div>
           
           <label for="coment">Коментар</label>
-          <textarea name="coment" id="coment"></textarea>
-          <div>
-            <input type="checkbox" name="agree" />
-            <p>Погоджуюся з розсилкою та приймаю</p>
-            <a>Умови договору </a>
+          <textarea name="coment" id="coment" placeholder="Введіть текст"></textarea>
+          <div class="form-check">
+            <input type="checkbox" name="agree" class="input-check"/>
+            <p>Погоджуюся з розсилкою та приймаю>
+            <a href="./docs/4029f946-d3f6-4207-ba90-927654aee18d.pdf" download>Умови договору </a>
+            </p>
           </div>
-          <button>Відправити</button>
+          <div class="wraper-btn">
+            <button class="hero-btn --form" > Відправити</button>
+          </div>
+          
         </form>
       </div>
     </div>
@@ -155,7 +163,7 @@
       <!-- section hero -->
       <section class="hero-section">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero-btn" type="button">Замовити послугу</button>
+        <button class="hero-btn" data-open type="button">Замовити послугу</button>
       </section>
       <!-- section benefit -->
       <section class="benefit">
@@ -896,6 +904,7 @@
       </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   </body>
 </html>
